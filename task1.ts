@@ -9,6 +9,7 @@ const yourName: string = "Карина";
 if (text.includes(yourName)) {
   console.log(text.toLowerCase());
 } else {
-  const result = text.slice(0, text.indexOf(name)) + yourName + text.slice(text.indexOf(name) + name.length);
+  const indexName = text.indexOf(name);
+  const result = text.slice(0, indexName) + yourName + text.slice(indexName + name.length);
   console.log(result.toLowerCase());
 }
